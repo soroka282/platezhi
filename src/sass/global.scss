@@ -1,0 +1,29 @@
+html {
+  font-family: 'source-sans-pro', 'Arial', sans-serif;
+}
+
+a {
+  font-family: 'source-sans-pro', 'Arial', sans-serif;
+  text-decoration: none;
+  color: $basic_text_black;
+  transition: 0.25s ease;
+}
+
+button {
+  font-family: 'source-sans-pro', 'Arial', sans-serif;
+  transition: 0.5s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}

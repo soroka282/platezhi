@@ -1,0 +1,121 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  box-shadow: 0 4px 14px $opacity_black;
+  background-color: $basic_white;
+  border-top: 6px solid $basic_sea_color;
+
+  @media (min-width: $width_desktop) {
+    border-top: 20px solid $basic_sea_color;
+    height: 96px;
+  }
+}
+
+.header__title-wrap {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+
+  @media (min-width: $width_desktop) {
+    margin-left: 25px;
+    margin-top: 5px;
+  }
+}
+
+.header__logo {
+  @media (min-width: $width_desktop) {
+    width: 67px;
+    height: 74px;
+  }
+}
+
+.header__title {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 20px;
+  margin-left: 10px;
+
+  @media (min-width: $width_desktop) {
+    font-size: 22px;
+    line-height: 28px;
+    margin-left: 20px;
+  }
+}
+
+.header__contact {
+  margin-right: 20px;
+
+  @media (min-width: $width_tablet) {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+}
+
+.header__telephone {
+  display: none;
+
+  @media (min-width: $width_tablet) {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 200px;
+    margin-right: 20px;
+
+    @media (min-width: $width_desktop) {
+      margin-right: 28px;
+      width: 250px;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      margin: 0;
+      color: $basic_text_black;
+
+      @media (min-width: $width_desktop) {
+        font-size: 13.5px;
+      }
+    }
+
+    a {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 25px;
+      color: $basic_text_black;
+
+      &:hover,
+      &:focus {
+        color: $basic_sea_color;
+      }
+
+      &:active {
+        color: $opacity_black;
+      }
+    }
+  }
+}
+
+.header__logo-user {
+  fill: $basic_sea_color;
+
+  @media (min-width: $width_desktop) {
+    width: 30px;
+    height: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $special_sea_color;
+    transition: 0.5s ease;
+  }
+
+  &:active {
+    fill: $basic_sea_color;
+  }
+}

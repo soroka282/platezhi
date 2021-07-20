@@ -1,0 +1,12 @@
+.page__footer {
+  padding-top: 15px;
+  padding-bottom: 30px;
+
+  @media (min-width: $width_desktop) {
+    height: 307px;
+    padding-top: 18px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 0;
+  }
+}

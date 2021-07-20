@@ -1,0 +1,157 @@
+.footer {
+  background: $bg_page;
+
+  @media (min-width: $width_tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      color: $basic_sea_color;
+    }
+
+    &:active {
+      color: $special_sea_color;
+    }
+  }
+}
+
+.footer__basic,
+.footer__operator,
+.footer__contacts,
+.footer__description {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.footer__contacts {
+  @media (min-width: $width_tablet) {
+    display: grid;
+    width: 640px;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+
+    @media (min-width: $width_desktop) {
+      width: 600px;
+      margin-left: 90px;
+      margin-top: -8px;
+    }
+  }
+}
+
+.footer__basic-item,
+.footer__operator-item,
+.footer__contacts-item,
+.footer__description-item {
+  font-weight: normal;
+  font-size: 15px;
+  margin-bottom: 8px;
+
+  @media (min-width: $width_desktop) {
+    margin-bottom: 4px;
+  }
+}
+
+.footer__basic-title,
+.footer__operator-title,
+.footer__contacts-title,
+.footer__description-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  margin-top: 19px;
+  color: $footer_text;
+
+  @media (min-width: $width_desktop) {
+    font-size: 19px;
+  }
+}
+
+.footer__contacts-title {
+  margin-top: 27px;
+  font-size: 19px;
+}
+
+.footer__contacts-adress {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.footer__contacts-email,
+.footer__contacts-info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  width: 320px;
+}
+
+.footer__contacts-email {
+  width: 290px;
+}
+
+.footer__contacts-info {
+  width: 260px;
+
+  @media (min-width: $width_desktop) {
+    margin-left: 30px;
+  }
+}
+
+.footer__email {
+  color: $basic_sea_color;
+  font-weight: 900;
+}
+
+.footer__description-description {
+  font-weight: normal;
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $button_grey;
+
+  @media (min-width: $width_desktop) {
+    margin-top: -10px;
+  }
+}
+
+.footer__basic {
+  @media (min-width: $width_tablet) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 280px;
+  }
+}
+
+.footer__operator {
+  @media (min-width: $width_tablet) {
+    margin-left: 18px;
+    margin-right: 0;
+  }
+}
+
+.footer__basic-item--display {
+  @media (min-width: $width_desktop) {
+    display: none;
+  }
+}
+
+.footer__basic-item--display-mob {
+  display: none;
+
+  @media (min-width: $width_desktop) {
+    display: inline;
+  }
+}
+
+.footer__operator-item {
+  font-size: 13px;
+}

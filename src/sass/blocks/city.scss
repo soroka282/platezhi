@@ -1,0 +1,73 @@
+.city__wrap {
+  margin: 28px 20px 30px 20px;
+
+  @media (min-width: $width_desktop) {
+    background: $basic_white;
+    box-shadow: 0 2px 5px $shadow_black_opacity;
+    border-radius: 10px;
+    width: 355px;
+    height: 572px;
+    margin: 0;
+    margin-top: 40px;
+    padding-top: 2px;
+    padding-left: 25px;
+  }
+}
+
+.city__title {
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 25px;
+
+  @media (min-width: $width_desktop) {
+    margin-left: -5px;
+  }
+}
+
+.city__list {
+  margin-bottom: 28px;
+}
+
+.city__item {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 13.5px;
+  color: $offer_text;
+
+  @media (min-width: $width_desktop) {
+    margin-bottom: 10.8px;
+    margin-left: -5px;
+  }
+
+  a {
+    &:hover,
+    &:focus {
+      color: $basic_sea_color;
+    }
+
+    &:active {
+      color: $special_sea_color;
+    }
+  }
+}
+
+.city__all {
+  font-weight: 600;
+  font-size: 15px;
+  color: $basic_sea_color;
+
+  @media (min-width: $width_desktop) {
+    margin-left: -5px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $basic_black;
+  }
+
+  &:active {
+    color: $special_sea_color;
+  }
+}
