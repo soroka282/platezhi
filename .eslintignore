@@ -1,0 +1,6 @@
+webpack.config.js
+/.vscode
+package-lock.json
+node_modules
+gulpfile.js
+*.svg
