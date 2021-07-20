@@ -14,7 +14,6 @@ const del = require("del");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const sync = require("browser-sync").create();
-const pug = require('gulp-pug');
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const webpackConfig = require('./webpack.config.js');

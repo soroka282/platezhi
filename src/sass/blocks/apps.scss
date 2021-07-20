@@ -1,9 +1,9 @@
 .apps {
-  background: url('../../img/banner-mobile.jpg') no-repeat center $basic_sea_color;
+  background: url('../img/banner-mobile.jpg') no-repeat center $basic_sea_color;
   height: 215px;
 
   @media (min-width: $special_width_tablet) {
-    background: url('../../img/banner.jpg') no-repeat center $basic_sea_color;
+    background: url('../img/banner.jpg') no-repeat center $basic_sea_color;
     height: 290px;
   }
 }
